@@ -9,6 +9,7 @@ const Context: React.FC = ({ children }) => {
   const [pokemonChosen, setPokemonChosen] = useState<boolean>(false);
   const [pokemon, setPokemon] = useState<PokeInfo.PokemonStats>();
   const [error, setError] = useState<boolean>(false);
+  const [display, setDisplay] = useState<boolean>(true);
 
   const searchPokemon = async (pokemon: string) => {
     await api
@@ -16,6 +17,7 @@ const Context: React.FC = ({ children }) => {
       .then((response) => {
         setPokemon(response.data);
         setError(false);
+        setDisplay(false);
       })
       .catch(() => setError(true));
   };
@@ -28,6 +30,8 @@ const Context: React.FC = ({ children }) => {
         setPokemonChosen,
         pokemon,
         error,
+        display,
+        setDisplay,
       }}
     >
       {children}

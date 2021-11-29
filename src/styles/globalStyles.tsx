@@ -3,12 +3,7 @@ import background from "../assets/background.png";
 
 export const GlobalStyle = createGlobalStyle`
 
-@font-face {
-    font-family: 'Pokemon-Normal';
-    src:url(./assets/fonts/Pokemon-Normal.ttf.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 * {
   margin: 0;
@@ -18,14 +13,14 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body{
-  font: 400 14px "Pokemon-Normal", sans-serif;
+  font: 400 14px Architects Daughter, cursive;
   background-image: url(${background});
 }
 
 input,
 button,
 textarea {
-  font: 400 18px "Pokemon-Normal", sans-serif;
+  font: 400 18px Architects Daughter, cursive;
 }
 
 button, svg {

@@ -28,7 +28,6 @@ export const Logo = styled.img`
 `;
 
 export const LogoTitle = styled.h1`
-  font-family: "Pokemon-Normal";
   color: #fcd20b;
   font-size: 50px;
   font-weight: bold;
@@ -43,9 +42,12 @@ export const NavWrapper = styled.div`
 `;
 
 export const InputWrapper = styled.div`
-  display: flex;
+  display: block;
   align-items: center;
   position: relative;
+  flex-direction: column;
+  height: 30px;
+  justify-content: space-around;
 
   svg {
     position: absolute;
@@ -53,7 +55,7 @@ export const InputWrapper = styled.div`
     top: 8px;
     font-size: 15px;
     padding: 1px;
-    color: #fcd20b;
+    color: #000;
     cursor: default;
   }
 `;
@@ -61,18 +63,21 @@ export const InputWrapper = styled.div`
 export const Nav = styled.input`
   height: 30px;
   border-radius: 9999em;
-  border: 2px solid #fcd20b;
-  background: none;
-  color: #fcd20b;
+  border: 2px solid #000;
+  background: #fff;
+  color: #000;
   padding-left: 30px;
   position: relative;
 
-  &:focus {
-    box-shadow: 1px 1px 5px #fcd20b;
-  }
   &::placeholder {
-    color: #fcd20b;
+    font-size: 15px;
+    color: #000;
   }
+
+  &:focus {
+    box-shadow: 0px 0px 2px #000;
+  }
+
   &::-webkit-search-cancel-button {
     -webkit-appearance: none;
   }
@@ -106,4 +111,15 @@ export const NavButton = styled.button`
     transform: scale(1, 1);
     transition: transform 0.3s ease;
   }
+`;
+
+export const Error = styled.span`
+  width: 100%;
+  color: #fcd20b;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: bold;
 `;

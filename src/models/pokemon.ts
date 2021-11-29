@@ -6,4 +6,6 @@ export interface Pokemon {
   setPokemonChosen: (pokemonChosen: boolean) => void;
   pokemon?: PokeInfo.PokemonStats;
   error?: boolean;
+  display: boolean;
+  setDisplay: (display: boolean) => void;
 }
