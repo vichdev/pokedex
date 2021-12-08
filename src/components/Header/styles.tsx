@@ -123,3 +123,28 @@ export const Error = styled.span`
   text-align: center;
   font-weight: bold;
 `;
+
+export const PokemonSearched = styled.div`
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 200px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  right: 490px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+`;
+
+export const PokeSpanSearch = styled.span`
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+`;

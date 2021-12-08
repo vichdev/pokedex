@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const SectionWrapper = styled.div`
   width: 100%;
@@ -7,7 +7,7 @@ export const SectionWrapper = styled.div`
   height: 600px;
   margin-top: 50px;
   border: 2px solid white;
-  box-shadow: 1px 1px 5px #000;
+  box-shadow: 1px 1px 10px 2px #000;
   background-color: #00b1f7;
 `;
 

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import { Pokemon } from "../models/pokemon";
 import { PokeInfo } from "../models/pokemonInfo";
 import api from "../services/api";

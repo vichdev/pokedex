@@ -355,4 +355,15 @@ export declare module PokeInfo {
     types: Type[];
     weight: number;
   }
+  export interface Result {
+    name: string;
+    url: string;
+  }
+
+  export interface RootObject {
+    count: number;
+    next?: any;
+    previous?: any;
+    results: Result[];
+  }
 }
